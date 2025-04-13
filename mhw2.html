@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="icona_scheda.png">
+        <title>JustEat | Consegna a domicilio: ordina cibo e spesa online</title>
+        <link rel="stylesheet" href="mhw2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <script src="mhw2.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a class="logo"><img src="logo.svg"></a>
+
+                <div id="links">
+                    <a class="button aggiuntivo">
+                        <img class="icona" src="azienda.png">
+                        Ordine aziendale
+                    </a>
+                    <a class="button aggiuntivo">
+                        <img class="icona" src="moto_consegne.png">         
+                        Diventa rider
+                    </a>
+                    <a class="button aggiuntivo">
+                        <img class="icona" src="casa.png">
+                        Diventa Partner
+                    </a>
+                    <a class="button">
+                        <img class="icona" src="omino.png">
+                        Accedi
+                    </a>
+                    <a class="button aggiuntivo", id="bandiera-mostrata">
+                        <img class="flag" src="flag_italia.png">
+                    </a>
+                    <a class="button", id="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </nav>
+
+            <div id="intro">
+                <div id="half-1">
+                    <div id="main">
+                        <h1>Ordina cibo e tanto altro</h1>
+                        <p id="sottotitolo"><strong>Ristoranti e spesa, a domicilio</strong></p>
+                        <div id="button-indirizzo">
+                            <p><input type="text" id="digitazione-indirizzo" placeholder="Inserisci indirizzo"></p>
+                            <a id="button-cerca"><strong>Cerca</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="half-2">
+                    <div id="triangolo"></div>
+                    <img src="copertina_pizza.png" data-percorso-relativo="copertina_pizza.png">
+                </div>
+            </div>
+        </header>
+
+
+        <section id="section-1">
+            <div class="occhiello">Come ordinare</div>
+            <h1>È semplicissimo!</h1>
+
+            <div class="container-3-colonne">
+                <div>
+                    <img src="ubicazione.png">
+                    <h2>Indicaci la tua posizione</h2>
+                    <p>Ti mostreremo i negozi e i ristoranti della tua zona da cui puoi ordinare.</p>
+                </div>
+
+                <div class="mediano">
+                    <img src="panino.png">
+                    <h2>Trova ciò che desideri</h2>
+                    <p>Cerca articoli o piatti, locali o cucine.</p>
+                </div>
+
+                <div class=>
+                    <img src="vassoio.png">
+                    <h2>Ordina con consegna o ritiro al locale</h2>
+                    <p>Ti terremo aggiornato sullo stato del tuo ordine.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section-2">
+            <div id="app-reclame">
+                <h1>Scarica l'app</h1>
+                <p>Il tuo piatto preferito è a portata di click!</p>
+                <div id="app-buttons">
+                    <a><img src="app_store.png"></a>
+                    <a><img src="google_play.png"></a>
+                </div>
+            </div>
+
+            <img id="telefono" src="copertina_telefono.png">
+        </section>
+
+
+        <section id="section-3">
+            <div class="occhiello">Just Eat</div>
+            <h1>Di cosa hai voglia?</h1>
+
+            <div class="container-3-colonne">
+                <div class="sottosezione">
+                    <img src="coccarda.png">
+                    <h2>Programmi fedeltà</h2>
+                    <img class="check" src="check.png">
+                    <p><a>Ricevi i timbri</a>, promozioni, sconti, novità e molto altro tramite newsletter e pagine social</p>
+                </div>
+
+                <div class="sottosezione mediano">
+                    <img src="stella.png">
+                    <h2>La nostra promessa</h2>
+                    <img class="check" src="check.png">
+                    <p>Servizio eccellente</p>
+                    <img class="check" src="check.png">
+                    <p>Recensioni autentiche</p>
+                </div>
+
+                <div class="sottosezione">
+                    <img src="ottagono.png">
+                    <h2>I tuoi vantaggi</h2>
+                    <img class="check" src="check.png">
+                    <p>Oltre 28.000 locali tra cui scegliere</p>
+                    <img class="check" src="check.png">
+                    <p>Paga online o in contanti</p>
+                    <img class="check" src="check.png">
+                    <p>Ordina ovunque, in qualsiasi momento e con qualsiasi dispositivo</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-head">
+                <div class="logo">
+                    <img src="logo.svg">
+                </div>
+                
+                <h1>Seguici</h1>
+
+                <div id="barra-social">
+                    <a><img src="facebook.svg"></a>
+                    <a><img src="instagram.jpg"></a>
+                    <a><img src="twitter.avif"></a>
+                    <a><img src="youtube.png"></a>
+                </div>
+            </div>
+
+            <div id="menu">
+                <div class="opzioni", id="menu-left">
+                    <div class="box">
+                        <div class="opzione">
+                            <p>Just Eat</p>
+                            <img class="freccia" src="freccia_alto.png" data-verso="freccia_alto.png">
+                        </div>
+                        
+                        <div class="sotto-opzioni">
+                            <div><a>Informazioni su JustEat</a></div>
+                            <div><a>Domande Frequenti</a></div>
+                            <div><a>Diventa partner JustEat</a></div>
+                            <div><a>Diventa rider JustEat</a></div>
+                            <div><a>Lavora con noi</a></div>
+                            <div><a>JustEat For business</a></div>
+                            <div><a>Informatica sulla privacy</a></div>
+                            <div><a>Miglior prezzo garantito</a></div>
+                            <div><a>Informazioni legali</a></div>
+                            <div><a>Informativa sui cookie</a></div>
+                            <div><a>Media e stampa</a></div>
+                            <div><a>Partner Hub</a></div>
+                            <div><a>Segnala un problema sul contenuto</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="opzioni", id="menu-right">
+                    <div class="box">
+                        <div class="opzione">
+                            <p>International</p>
+                            <img class="freccia" src="freccia_alto.png" data-verso="freccia_alto.png">
+                        </div>
+
+                        <div class="sotto-opzioni" id="international">
+                            <div><a>Investor Relations</a></div>
+                            <div><a>Bistro.sk</a></div>
+                            <div><a>Just Eat - Switzerland</a></div>
+                            <div><a>Just Eat - Denmark</a></div>
+                            <div><a>Just Eat - Spain</a></div>
+                            <div><a>Just Eat - United Kingdom</a></div>
+                            <div><a>Just Eat - Ireland</a></div>
+                            <div><a>Just Eat - Italy</a></div>
+                            <div><a>Lieferando.at</a></div>
+                            <div><a>Lieferando.de</a></div>
+                            <div><a>Menulog - Australia</a></div>
+                            <div><a>Pyszne.pl</a></div>
+                            <div><a>SkipTheDishes</a></div>
+                            <div><a>Takeaway.com - Belgium</a></div>
+                            <div><a>Takeaway.com - Luxembourg</a></div>
+                            <div><a>Takeaway.com - Bulgaria</a></div>
+                            <div><a>Thuisbezorgd.nl</a></div>
+                            <div><a>10bis</a></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="opzione">
+                            <p>Cucine</p>
+                            <img class="freccia" src="freccia_basso.png" data-verso="freccia_basso.png">
+                        </div>
+
+                        <div class="sotto-opzioni hidden">
+                            <div><a>Pizza</a></div>
+                            <div><a>Sushi</a></div>
+                            <div><a>Kebab</a></div>
+                            <div><a>Poke</a></div>
+                            <div><a>Gelato</a></div>
+                            <div><a>Dolci</a></div>
+                            <div><a>Cibo cinese</a></div>
+                            <div><a>Hamburger</a></div>
+                            <div><a>Supermercato - Spesa online</a></div>
+                            <div><a>Cibo italiano</a></div>
+                            <div><a>Panini</a></div>
+                            <div><a>Colazione</a></div>
+                            <div><a>Pollo</a></div>
+                            <div><a>Cibo messicano</a></div>
+                            <div><a>Tutti i tipi di cucina</a></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="opzione">
+                            <p>Esplora</p>
+                            <img class="freccia" src="freccia_basso.png" data-verso="freccia_basso.png">
+                        </div>
+
+                        <div class="sotto-opzioni hidden">
+                            <div><a>Blog</a></div>
+                            <div><a>Just Eat Awards 2024</a></div>
+                            <div><a>Partners</a></div>
+                            <div><a>Sostenibilità</a></div>
+                            <div><a>Cosa mangiare oggi</a></div>
+                            <div><a>Tiro, gol, rimborso</a></div>
+                            <div><a>L'osservatorio Just Eat 2024</a></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="opzione">
+                            <p>Città</p>
+                            <img class="freccia" src="freccia_basso.png" data-verso="freccia_basso.png">
+                        </div>
+
+                        <div class="sotto-opzioni hidden">
+                            <div><a>Roma</a></div>
+                            <div><a>Milano</a></div>
+                            <div><a>Torino</a></div>
+                            <div><a>Bologna</a></div>
+                            <div><a>Napoli</a></div>
+                            <div><a>Genova</a></div>
+                            <div><a>Trieste</a></div>
+                            <div><a>Bari</a></div>
+                            <div><a>Firenze</a></div>
+                            <div><a>Palermo</a></div>
+                            <div><a>Pisa</a></div>
+                            <div><a>Ferrara</a></div>
+                            <div><a>Parma</a></div>
+                            <div><a>Tutte le città</a></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="opzione">
+                            <p>Catene</p>
+                            <img class="freccia" src="freccia_basso.png" data-verso="freccia_basso.png">
+                        </div>
+
+                        <div class="sotto-opzioni hidden">
+                            <div><a>McDonald's</a></div>
+                            <div><a>Poke House</a></div>
+                            <div><a>Sushiko</a></div>
+                            <div><a>Burger King</a></div>
+                            <div><a>Carrefour</a></div>
+                            <div><a>Zushi</a></div>
+                            <div><a>Old Wild West</a></div>
+                            <div><a>Fratelli La Bufala</a></div>
+                            <div><a>Tutte le catene</a></div>
+                            <div><a>La Piadineria</a></div>
+                            <div><a>Hamerica's</a></div>
+                            <div><a>Alice Pizza</a></div>
+                            <div><a>Starbucks</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-foot">
+                <div class="linea"></div>
+
+                <div id="navigazione-finale">
+                    <div><a>Diventa partner Just Eat</a></div>
+                    <div><a>Lavora con noi</a></div>
+                    <div><a>Termini di servizio</a></div>
+                    <div><a>Informativa sulla privacy</a></div>
+                    <div><a>Informazioni legali</a></div>
+                    <div><a>Informativa cookie</a></div>
+                    <div><a>Accessibilità</a></div>
+                    <div><a>Bug Bounty</a></div>
+                    <div><a>Linea Diretta per l'etica</a></div>
+                </div>
+
+                <div id="copyright">
+                    <p>© 2025 Just Eat</p>
+                </div>
+                
+                <div id="cookie">
+                    <p>
+                        <a><strong>Vedi preferenze sui cookie</strong></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div>
+            <a id="feedback-button">
+                <strong>Feedback</strong>
+            </a>
+        </div>
+
+        <div class="modal-view hidden">
+            <div id="modal-box">
+                <div class="top">
+                    <h1>Il mio account</h1>
+                    <img class="x" src="x.png">
+                </div>
+                <section>
+                    <a class="button accesso">Accedi</a>
+                    <a class="button account">Crea un account</a>
+                </section>
+
+                <a>
+                    <div>
+                        <img class="icona" src="star.png">
+                        Premi
+                    </div>
+                </a>
+                <a>
+                    <div>
+                        <img class="icona" src="percentuale.png">
+                        Carte Fedeltà
+                    </div>
+                </a>
+                <a>
+                    <div>
+                        <img class="icona" src="info.png">
+                        Ti serve aiuto?
+                    </div>
+                </a>
+                <div class="linea"></div>
+                <a>
+                    <div>
+                        <img class="icona" src="moto_consegne.png">
+                        Diventa rider
+                    </div>
+                </a>
+                <a>
+                    <div>
+                        <img class="icona" src="azienda.png">
+                        JustEat For Business
+                    </div>
+                </a>
+                <a>
+                    <div>
+                        <img class="icona" src="casa.png">
+                        Diventa Partner
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-bandiere" class="hidden">
+            <h1>Paese</h1>
+            <div id="nazioni">
+                <div class="nazione" id="scelta">
+                    <div>
+                        <img class="flag" src="flag_italia.png">
+                        Italia
+                    </div>
+
+                    <img class="check" src="check.png">
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_australia.png">
+                        Australia
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_austria.png">
+                        Austria
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_belgio.png">
+                        Belgio
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_bulgaria.png">
+                        Bulgaria
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_canada.png">
+                        Canada
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_danimarca.png">
+                        Danimarca
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_germania.png">
+                        Germania
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_irlanda.png">
+                        Irlanda
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_israele.png">
+                        Israele
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_lussemburgo.png">
+                        Lussemburgo
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_paesi_bassi.png">
+                        Paesi Bassi
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_polonia.png">
+                        Polonia
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_regno_unito.png">
+                        Regno Unito
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_slovacchia.png">
+                        Slovacchia
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_spagna.png">
+                        Spagna
+                    </div>
+                </div>
+
+                <div class="nazione">
+                    <div>
+                        <img class="flag" src="flag_svizzera.png">
+                        Svizzera
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="scroller-up hidden">
+            <img src="freccia_rossa.png">
+        </div>
+    </body>
+</html>
